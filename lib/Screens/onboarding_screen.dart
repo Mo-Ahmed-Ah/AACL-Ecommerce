@@ -14,9 +14,17 @@ class OnboardingScreen extends StatelessWidget {
       pageColor: Colors.white,
       imagePadding: EdgeInsets.zero,
     );
+
     return IntroductionScreen(
       key: introkwy,
       globalBackgroundColor: Colors.white,
+
+      // ✅ تحسين السحب بين الصفحات
+      scrollPhysics: BouncingScrollPhysics(),
+
+      // ✅ تحسين حركة التنقل بين الصفحات
+      curve: Curves.easeInOut,
+
       pages: [
         PageViewModel(
           title: "Shop Now",
@@ -42,9 +50,31 @@ class OnboardingScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 15, right: 15, top: 50),
             child: ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                // ✅ تحسين الانتقال إلى صفحة HomeScreen بتأثير حركة سلس
+                Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                  PageRouteBuilder(
+                    transitionDuration: Duration(milliseconds: 600),
+                    pageBuilder:
+                        (context, animation, secondaryAnimation) =>
+                            HomeScreen(),
+                    transitionsBuilder: (
+                      context,
+                      animation,
+                      secondaryAnimation,
+                      child,
+                    ) {
+                      final slideTween = Tween<Offset>(
+                        begin: Offset(1.0, 0.0),
+                        end: Offset.zero,
+                      ).chain(CurveTween(curve: Curves.easeInOut));
+
+                      return SlideTransition(
+                        position: animation.drive(slideTween),
+                        child: FadeTransition(opacity: animation, child: child),
+                      );
+                    },
+                  ),
                 );
               },
               child: Text(

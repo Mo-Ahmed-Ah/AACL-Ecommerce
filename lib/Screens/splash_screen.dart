@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/onboarding_screen.dart';
 
@@ -10,25 +9,71 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen>
+    with TickerProviderStateMixin {
+  late AnimationController _iconController;
+  late AnimationController _textController;
+  late Animation<double> _fadeAnimation;
+  late Animation<Offset> _slideAnimation;
+
   @override
   void initState() {
     super.initState();
-    Timer(
-      Duration(seconds: 1),
-      () => Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => OnboardingScreen()),
-      ),
+
+    // Animation controllers
+    _iconController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 1200),
     );
+    _textController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 1000),
+    );
+
+    // Fade animation
+    _fadeAnimation = Tween<double>(
+      begin: 0,
+      end: 1,
+    ).animate(CurvedAnimation(parent: _iconController, curve: Curves.easeIn));
+
+    // Slide animation
+    _slideAnimation = Tween<Offset>(
+      begin: Offset(0, 0.5),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(parent: _textController, curve: Curves.easeOut));
+
+    // Start animations
+    _iconController.forward();
+    _textController.forward();
+
+    // Navigate to onboarding after a delay
+    Timer(Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          transitionDuration: Duration(milliseconds: 700),
+          pageBuilder:
+              (context, animation, secondaryAnimation) => OnboardingScreen(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(opacity: animation, child: child);
+          },
+        ),
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _iconController.dispose();
+    _textController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
+        height: double.infinity,
+        width: double.infinity,
         decoration: const BoxDecoration(
           color: Colors.black,
           image: DecorationImage(
@@ -40,18 +85,25 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.shopping_cart,
-              size: 250,
-              color: Color.fromARGB(255, 238, 80, 80),
+            FadeTransition(
+              opacity: _fadeAnimation,
+              child: Icon(
+                Icons.shopping_cart,
+                size: 200,
+                color: Color.fromARGB(255, 238, 80, 80),
+              ),
             ),
-            Text(
-              "AACL SHOP",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-                fontFamily: FontStyle.italic.toString(),
+            SizedBox(height: 20),
+            SlideTransition(
+              position: _slideAnimation,
+              child: Text(
+                "AACL SHOP",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ),
           ],
