@@ -26,6 +26,7 @@ MERGED from F:\my Projects\flutter_ecommerce\android\app\src\main\AndroidManifes
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:flutter_keyboard_visibility] F:\my Projects\flutter_ecommerce\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window:1.2.0] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.window:window-java:1.2.0] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\a2be31f5f98c024d17eda5160252de46\transformed\jetified-window-java-1.2.0\AndroidManifest.xml:17:1-21:12
@@ -80,6 +81,8 @@ uses-sdk
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml
 INJECTED from F:\my Projects\flutter_ecommerce\android\app\src\debug\AndroidManifest.xml
+MERGED from [:flutter_keyboard_visibility] F:\my Projects\flutter_ecommerce\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] F:\my Projects\flutter_ecommerce\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window:1.2.0] C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:20:5-44
