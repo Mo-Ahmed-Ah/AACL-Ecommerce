@@ -176,6 +176,12 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "sms_otp_auto_verify",
+      "rootUri": "file:///C:/Users/ahmoh/AppData/Local/Pub/Cache/hosted/pub.dev/sms_otp_auto_verify-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///C:/Users/ahmoh/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1",
       "packageUri": "lib/",
@@ -230,7 +236,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-04-19T13:33:02.529347Z",
+  "generated": "2025-04-20T11:30:01.482087Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///C:/flutter",

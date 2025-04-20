@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/Screens/forgo_screen.dart';
 import 'package:flutter_ecommerce/Screens/home_screen.dart';
 import 'package:flutter_ecommerce/Screens/signup_screen.dart';
 
@@ -43,11 +44,18 @@ class LoginScreen extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomRight,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ForgotScreen(),
+                              ),
+                            );
+                          },
                           child: Text(
-                            "Forget Password?",
+                            "Forgot Password?",
                             style: TextStyle(
-                              color: Color(0xFFEF6969),
+                              color: Color(0xFFDB3022),
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -71,7 +79,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size.fromHeight(55),
-                          backgroundColor: Color(0xFFEF6969),
+                          backgroundColor: Color(0xFFDB3022),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -100,7 +108,7 @@ class LoginScreen extends StatelessWidget {
                             child: Text(
                               "Sign Up",
                               style: TextStyle(
-                                color: Color(0xFFEF6969),
+                                color: Color(0xFFDB3022),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
