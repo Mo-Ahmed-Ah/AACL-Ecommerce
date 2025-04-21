@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/login_screen.dart';
+import 'package:flutter_ecommerce/Screens/navigation_screen.dart';
 import 'package:flutter_ecommerce/Screens/splash_screen.dart';
 import 'package:flutter/services.dart';
 
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "AACL ECommerce Shopping App",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: Color(0xFFEF6969)),
-      home: LoginScreen(),
+      theme: ThemeData(primaryColor: Color(0xFFDB3022)),
+      home: NavigationScreen(),
     );
   }
 }
+
