@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/Screens/cart_screen.dart';
 import 'package:flutter_ecommerce/Widgets/container_button_modal.dart';
 
 class ProductDetailsPopup extends StatelessWidget {
@@ -9,6 +10,8 @@ class ProductDetailsPopup extends StatelessWidget {
     fontWeight: FontWeight.w600,
     fontSize: 18,
   );
+
+  List<Color> colors = [Colors.red, Colors.indigo, Colors.green, Colors.amber];
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +66,7 @@ class ProductDetailsPopup extends StatelessWidget {
                                   SizedBox(width: 30),
                                 ],
                               ),
-                              SizedBox(width: 20),
+                              SizedBox(height: 18),
                               Container(
                                 child: Row(
                                   children: [
@@ -73,10 +76,10 @@ class ProductDetailsPopup extends StatelessWidget {
                                           horizontal: 6,
                                         ),
 
-                                        height: 30,
-                                        width: 30,
+                                        height: 28,
+                                        width: 28,
                                         decoration: BoxDecoration(
-                                          color: Colors.amber,
+                                          color: colors[i],
                                           borderRadius: BorderRadius.circular(
                                             20,
                                           ),
@@ -85,9 +88,51 @@ class ProductDetailsPopup extends StatelessWidget {
                                   ],
                                 ),
                               ),
+                              SizedBox(height: 20),
+                              Row(
+                                children: [
+                                  SizedBox(width: 10),
+                                  Text("-", style: istyle),
+                                  SizedBox(width: 30),
+                                  Text("1", style: istyle),
+                                  SizedBox(width: 30),
+                                  Text("+", style: istyle),
+                                ],
+                              ),
                             ],
                           ),
                         ],
+                      ),
+                      SizedBox(height: 20),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Total Price :", style: istyle),
+                          Text(
+                            '\$ 100.00',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFDB3022),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 20),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CartScreen(),
+                            ),
+                          );
+                        },
+                        child: ContainerButtonModal(
+                          containerwidth: MediaQuery.of(context).size.width,
+                          itext: "Checkout",
+                          bgColor: Color(0xFFDB3022),
+                        ),
                       ),
                     ],
                   ),
