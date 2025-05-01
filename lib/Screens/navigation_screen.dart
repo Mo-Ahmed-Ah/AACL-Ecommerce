@@ -20,17 +20,21 @@ class _NavigationScreenState extends State<NavigationScreen> {
     Icons.favorite,
     Icons.person,
   ];
+
   int pageIndex = 0;
+
   List<Widget> pages = [
     HomeScreen(),
     CartScreen(),
     FavoritsScreen(),
     ProfileScreen(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedSemantics(index: pageIndex, child: pages[pageIndex]),
+
       floatingActionButton: SafeArea(
         child: FloatingActionButton(
           shape: RoundedRectangleBorder(
@@ -38,9 +42,11 @@ class _NavigationScreenState extends State<NavigationScreen> {
           ),
           backgroundColor: Color(0xFFDB3022),
           onPressed: () {},
+
           child: Icon(Icons.qr_code, size: 30, color: Colors.white),
         ),
       ),
+
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
       bottomNavigationBar: AnimatedBottomNavigationBar(

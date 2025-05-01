@@ -141,12 +141,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
             if (trailingWidgets != null)
               ...trailingWidgets
             else if (imagePath != null)
-              Image.asset(
-                imagePath,
-                width: imageWidth,
-                height: imageHeight,
-                fit: BoxFit.cover,
-              ),
+              Image.asset(imagePath, width: imageWidth, height: imageHeight),
           ],
         ),
       ),

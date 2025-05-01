@@ -143,6 +143,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 20),
                 Container(
                   height: 180,
+                  width: MediaQuery.of(context).size.width,
                   child: ListView.builder(
                     itemCount: imageList.length,
                     scrollDirection: Axis.horizontal,
@@ -150,7 +151,7 @@ class HomeScreen extends StatelessWidget {
 
                     itemBuilder: (context, index) {
                       return Container(
-                        width: 320,
+                        width: MediaQuery.of(context).size.width,
                         margin: EdgeInsets.only(right: 15),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -158,7 +159,6 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             SizedBox(
                               height: 180,
-                              width: 180,
                               child: Stack(
                                 children: [
                                   InkWell(
@@ -192,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       child: Center(
                                         child: Icon(
-                                          Icons.favorite,
+                                          Icons.favorite_border,
                                           color: Color(0xFFDB3022),
                                         ),
                                       ),
@@ -205,6 +205,7 @@ class HomeScreen extends StatelessWidget {
                               padding: const EdgeInsets.only(left: 8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+
                                 children: [
                                   SizedBox(height: 10),
                                   Text(
@@ -280,7 +281,7 @@ class HomeScreen extends StatelessWidget {
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio: 0.6,
-                      // crossAxisSpacing: 40,
+                      crossAxisSpacing: 15,
                     ),
                     itemBuilder: (context, index) {
                       return Container(
@@ -324,7 +325,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                       child: Center(
                                         child: Icon(
-                                          Icons.favorite,
+                                          Icons.favorite_border,
                                           color: Color(0xFFDB3022),
                                         ),
                                       ),
