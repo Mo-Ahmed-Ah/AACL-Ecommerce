@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/Screens/forgo_screen.dart';
-import 'package:flutter_ecommerce/Screens/home_screen.dart';
-import 'package:flutter_ecommerce/Screens/navigation_screen.dart';
-import 'package:flutter_ecommerce/Screens/signup_screen.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  //  متغير للتحكم في إظهار أو إخفاء كلمة المرور
+  bool _isPasswordVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,82 +20,85 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 110),
-
+                const SizedBox(height: 110),
                 Image.asset("assets/images/freed.png"),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
 
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: Column(
                     children: [
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: "Enter Email",
                           border: OutlineInputBorder(),
                           prefixIcon: Icon(Icons.email),
                         ),
                       ),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
+
+                      // حقل كلمة المرور مع تفعيل زر العين
                       TextFormField(
-                        obscureText: true,
+                        obscureText: !_isPasswordVisible,
                         decoration: InputDecoration(
                           labelText: "Enter Password",
-                          border: OutlineInputBorder(),
-                          prefixIcon: Icon(Icons.lock),
-                          suffixIcon: Icon(Icons.visibility_off),
-                        ),
-                      ),
-                      Align(
-                        alignment: Alignment.bottomRight,
-                        child: TextButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ForgotScreen(),
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "Forgot Password?",
-                            style: TextStyle(
-                              color: Color(0xFFDB3022),
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
+                          border: const OutlineInputBorder(),
+                          prefixIcon: const Icon(Icons.lock),
+                          suffixIcon: IconButton(
+                            icon: Icon(
+                              _isPasswordVisible
+                                  ? Icons.visibility
+                                  : Icons.visibility_off,
                             ),
+                            onPressed: () {
+                              setState(() {
+                                _isPasswordVisible = !_isPasswordVisible;
+                              });
+                            },
                           ),
                         ),
                       ),
-                      SizedBox(height: 40),
+                     Align(
+                          alignment: Alignment.bottomRight,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.pushReplacementNamed(context, '/forgetPassword');
+                            },
+                            child: const Text(
+                              "Forgot Password?",
+                              style: TextStyle(
+                                color: Color(0xFFDB3022),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      const SizedBox(height: 10),
 
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => NavigationScreen(),
-                            ),
-                          );
+                          Navigator.pushReplacementNamed(context, '/nav');
                         },
-                        child: Text(
-                          "Login",
-                          style: TextStyle(color: Colors.white, fontSize: 18),
-                        ),
                         style: ElevatedButton.styleFrom(
-                          minimumSize: Size.fromHeight(55),
-                          backgroundColor: Color(0xFFDB3022),
+                          minimumSize: const Size.fromHeight(55),
+                          backgroundColor: const Color(0xFFDB3022),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
+                        child: const Text(
+                          "Login",
+                          style: TextStyle(color: Colors.white, fontSize: 18),
+                        ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            "Haven't you got an account?",
+                          const Text(
+                            "I haven't got an account ",
                             style: TextStyle(
                               color: Colors.black54,
                               fontSize: 15,
@@ -99,14 +106,9 @@ class LoginScreen extends StatelessWidget {
                           ),
                           TextButton(
                             onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => SignupScreen(),
-                                ),
-                              );
+                              Navigator.pushNamed(context, '/sign');
                             },
-                            child: Text(
+                            child: const Text(
                               "Sign Up",
                               style: TextStyle(
                                 color: Color(0xFFDB3022),

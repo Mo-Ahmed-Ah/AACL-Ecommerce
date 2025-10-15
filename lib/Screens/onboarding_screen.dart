@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/home_screen.dart';
+import 'package:flutter_ecommerce/Screens/login_screen.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -57,7 +58,7 @@ class OnboardingScreen extends StatelessWidget {
                     transitionDuration: Duration(milliseconds: 600),
                     pageBuilder:
                         (context, animation, secondaryAnimation) =>
-                            HomeScreen(),
+                            LoginScreen(),
                     transitionsBuilder: (
                       context,
                       animation,

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884931733927",
+    "project_id": "frist-ecommerce",
+    "storage_bucket": "frist-ecommerce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884931733927:android:2fd55c61c55832d0732e82",
+        "android_client_info": {
+          "package_name": "com.aacl.flutter_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Skdrx46wnRxAvhdBibQnk9HauqPhK1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

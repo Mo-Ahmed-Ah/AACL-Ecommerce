@@ -12,6 +12,7 @@ class OptRecoveryScreen extends StatefulWidget {
 class _OptRecoveryScreenState extends State<OptRecoveryScreen> {
   TextEditingController textEditingController = TextEditingController();
 
+  // ignore: unused_element
   BoxDecoration get _pinPutDecoration {
     return BoxDecoration(
       border: Border.all(color: Theme.of(context).primaryColor),

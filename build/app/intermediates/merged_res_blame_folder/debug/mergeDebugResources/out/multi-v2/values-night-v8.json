@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.aacl.flutter_ecommerce.app-mergeDebugResources-24:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.aacl.flutter_ecommerce.app-mergeDebugResources-39:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "F:\\my Projects\\flutter_ecommerce\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "G:\\AACL-Ecommerce\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

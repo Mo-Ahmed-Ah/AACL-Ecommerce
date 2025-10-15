@@ -1,28 +1,48 @@
-com.aacl.flutter_ecommerce.app-jetified-lifecycle-livedata-core-ktx-2.7.0-0 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\03c28736e15b3378b012cee867bacea5\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
-com.aacl.flutter_ecommerce.app-lifecycle-livedata-core-2.7.0-1 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\1051ba3f70c22c6b6fe969df2dc22087\transformed\lifecycle-livedata-core-2.7.0\res
-com.aacl.flutter_ecommerce.app-jetified-activity-1.8.1-2 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\1118da8128d511195e65ca01fd969642\transformed\jetified-activity-1.8.1\res
-com.aacl.flutter_ecommerce.app-jetified-core-1.0.0-3 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\214b8070ae4c800f920040867b251ddc\transformed\jetified-core-1.0.0\res
-com.aacl.flutter_ecommerce.app-core-runtime-2.2.0-4 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\2191f642bb5d35c54ec69e277330946c\transformed\core-runtime-2.2.0\res
-com.aacl.flutter_ecommerce.app-jetified-tracing-1.2.0-5 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\2c54165b066b4ebdf8a3c03617e1f28b\transformed\jetified-tracing-1.2.0\res
-com.aacl.flutter_ecommerce.app-lifecycle-runtime-2.7.0-6 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\3c95229e85d86102cdd7c59033387933\transformed\lifecycle-runtime-2.7.0\res
-com.aacl.flutter_ecommerce.app-lifecycle-viewmodel-2.7.0-7 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\4c860eba32ffd640cf27d7bcf8c58afd\transformed\lifecycle-viewmodel-2.7.0\res
-com.aacl.flutter_ecommerce.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-8 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\4fc20009fbb469c189a90fdeb685306f\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
-com.aacl.flutter_ecommerce.app-jetified-profileinstaller-1.3.1-9 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\res
-com.aacl.flutter_ecommerce.app-jetified-annotation-experimental-1.4.0-10 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\9195964353cc99544e72471d817d6a71\transformed\jetified-annotation-experimental-1.4.0\res
-com.aacl.flutter_ecommerce.app-lifecycle-livedata-2.7.0-11 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\99c402a3648559de984e485c4b7bb0db\transformed\lifecycle-livedata-2.7.0\res
-com.aacl.flutter_ecommerce.app-jetified-window-java-1.2.0-12 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\a2be31f5f98c024d17eda5160252de46\transformed\jetified-window-java-1.2.0\res
-com.aacl.flutter_ecommerce.app-jetified-window-1.2.0-13 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\res
-com.aacl.flutter_ecommerce.app-jetified-lifecycle-process-2.7.0-14 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\res
-com.aacl.flutter_ecommerce.app-fragment-1.7.1-15 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\res
-com.aacl.flutter_ecommerce.app-jetified-savedstate-1.2.1-16 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\d8f536ab661db8c110fa8f555d4045bd\transformed\jetified-savedstate-1.2.1\res
-com.aacl.flutter_ecommerce.app-core-1.13.1-17 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\res
-com.aacl.flutter_ecommerce.app-jetified-core-ktx-1.13.1-18 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\e3f2b050ee295e3aa25c0b40346b22e9\transformed\jetified-core-ktx-1.13.1\res
-com.aacl.flutter_ecommerce.app-jetified-startup-runtime-1.1.1-19 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\ffafe5f631203f4924364ba072ee19e0\transformed\jetified-startup-runtime-1.1.1\res
-com.aacl.flutter_ecommerce.app-debug-20 F:\my Projects\flutter_ecommerce\android\app\src\debug\res
-com.aacl.flutter_ecommerce.app-main-21 F:\my Projects\flutter_ecommerce\android\app\src\main\res
-com.aacl.flutter_ecommerce.app-pngs-22 F:\my Projects\flutter_ecommerce\build\app\generated\res\pngs\debug
-com.aacl.flutter_ecommerce.app-resValues-23 F:\my Projects\flutter_ecommerce\build\app\generated\res\resValues\debug
-com.aacl.flutter_ecommerce.app-packageDebugResources-24 F:\my Projects\flutter_ecommerce\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.aacl.flutter_ecommerce.app-packageDebugResources-25 F:\my Projects\flutter_ecommerce\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.aacl.flutter_ecommerce.app-debug-26 F:\my Projects\flutter_ecommerce\build\app\intermediates\merged_res\debug\mergeDebugResources
-com.aacl.flutter_ecommerce.app-debug-27 F:\my Projects\flutter_ecommerce\build\flutter_keyboard_visibility\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-jetified-lifecycle-livedata-core-ktx-2.7.0-0 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\00175c9b8eac4ef38de25b4486594a15\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.aacl.flutter_ecommerce.app-jetified-core-1.0.0-1 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\029b0a000d97e0b0b43960105a08fbce\transformed\jetified-core-1.0.0\res
+com.aacl.flutter_ecommerce.app-jetified-tracing-1.2.0-2 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\054d64c8d8c06afe542b9e070487dcda\transformed\jetified-tracing-1.2.0\res
+com.aacl.flutter_ecommerce.app-core-1.13.1-3 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\0d065b2a568995de4f5612fb6d50847b\transformed\core-1.13.1\res
+com.aacl.flutter_ecommerce.app-jetified-activity-1.8.1-4 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\0d85972c43fcc0218a602486fd3a69a3\transformed\jetified-activity-1.8.1\res
+com.aacl.flutter_ecommerce.app-jetified-startup-runtime-1.1.1-5 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\10d2293fe7121e985a073735a35a2e1e\transformed\jetified-startup-runtime-1.1.1\res
+com.aacl.flutter_ecommerce.app-jetified-datastore-preferences-core-release-6 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\24b163c130723c2dbeea7cf20e70f543\transformed\jetified-datastore-preferences-core-release\res
+com.aacl.flutter_ecommerce.app-lifecycle-livedata-2.7.0-7 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\3129f7b571dfe1891d5d7328df3dcb79\transformed\lifecycle-livedata-2.7.0\res
+com.aacl.flutter_ecommerce.app-lifecycle-viewmodel-2.7.0-8 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\35cfeb9870d66102c363b011e6232f03\transformed\lifecycle-viewmodel-2.7.0\res
+com.aacl.flutter_ecommerce.app-core-runtime-2.2.0-9 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\36d692e605cec949060a19db68228839\transformed\core-runtime-2.2.0\res
+com.aacl.flutter_ecommerce.app-jetified-window-1.2.0-10 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\38e252375bedbace0426edd8ba0b82dc\transformed\jetified-window-1.2.0\res
+com.aacl.flutter_ecommerce.app-browser-1.4.0-11 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\3af3f5300bfa301816475f6faeff5642\transformed\browser-1.4.0\res
+com.aacl.flutter_ecommerce.app-jetified-annotation-experimental-1.4.0-12 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\46fedcfb485c10f949e2f30b93f7644d\transformed\jetified-annotation-experimental-1.4.0\res
+com.aacl.flutter_ecommerce.app-lifecycle-runtime-2.7.0-13 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\54e955253b19d8c088bfdf0d9804680e\transformed\lifecycle-runtime-2.7.0\res
+com.aacl.flutter_ecommerce.app-jetified-lifecycle-process-2.7.0-14 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\5f8dcfbe0280da17414b1e5d3a71ccfa\transformed\jetified-lifecycle-process-2.7.0\res
+com.aacl.flutter_ecommerce.app-jetified-play-services-auth-20.7.0-15 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\618d068c33299770274f87dd7ba6e3d1\transformed\jetified-play-services-auth-20.7.0\res
+com.aacl.flutter_ecommerce.app-jetified-datastore-release-16 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\6f6e905715dd2493dc79631db7d98cc4\transformed\jetified-datastore-release\res
+com.aacl.flutter_ecommerce.app-localbroadcastmanager-1.1.0-17 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\7260896fe21d73625a178c97c1d2b899\transformed\localbroadcastmanager-1.1.0\res
+com.aacl.flutter_ecommerce.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-18 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\7bb4a3ee315da751798037621eca7c93\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.aacl.flutter_ecommerce.app-fragment-1.7.1-19 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\7f478ce3f82c84dee6de3e31f62fcdea\transformed\fragment-1.7.1\res
+com.aacl.flutter_ecommerce.app-jetified-play-services-base-18.1.0-20 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\8042daec9f53e997438afef3de3f2d1b\transformed\jetified-play-services-base-18.1.0\res
+com.aacl.flutter_ecommerce.app-jetified-datastore-preferences-release-21 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\9d4886e976b46b1cb85678b580043d29\transformed\jetified-datastore-preferences-release\res
+com.aacl.flutter_ecommerce.app-lifecycle-livedata-core-2.7.0-22 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\a218294419de7aa2dba03a6e9afc6f71\transformed\lifecycle-livedata-core-2.7.0\res
+com.aacl.flutter_ecommerce.app-jetified-play-services-basement-18.8.0-23 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\b28ad460a2dc362f12d370916a34635f\transformed\jetified-play-services-basement-18.8.0\res
+com.aacl.flutter_ecommerce.app-jetified-savedstate-1.2.1-24 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\b77b3b9ac3537d02ed0c12baa9a84d1b\transformed\jetified-savedstate-1.2.1\res
+com.aacl.flutter_ecommerce.app-jetified-credentials-play-services-auth-1.2.0-rc01-25 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\c1b0a9ba0a44a0a67d279ce12e5bf9de\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\res
+com.aacl.flutter_ecommerce.app-jetified-firebase-common-22.0.1-26 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\c6c017f0795e6756cfb2853ccd1bff4f\transformed\jetified-firebase-common-22.0.1\res
+com.aacl.flutter_ecommerce.app-jetified-firebase-messaging-25.0.1-27 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\d2eab28115286a68bd0096a5e096c1d6\transformed\jetified-firebase-messaging-25.0.1\res
+com.aacl.flutter_ecommerce.app-jetified-profileinstaller-1.3.1-28 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\d59ed41865ca78920bdded3d7ddc3c47\transformed\jetified-profileinstaller-1.3.1\res
+com.aacl.flutter_ecommerce.app-jetified-window-java-1.2.0-29 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\e16756149ea3745b2e8a9d60f19affcb\transformed\jetified-window-java-1.2.0\res
+com.aacl.flutter_ecommerce.app-jetified-credentials-1.2.0-rc01-30 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\e20f97559ed4a2849df3d981cb1ae327\transformed\jetified-credentials-1.2.0-rc01\res
+com.aacl.flutter_ecommerce.app-jetified-core-ktx-1.13.1-31 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\e3ca9917d7fd43ec79312c17c6430c9e\transformed\jetified-core-ktx-1.13.1\res
+com.aacl.flutter_ecommerce.app-jetified-core-common-2.0.3-32 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\eace1b225c956b45f5473b2a102e1857\transformed\jetified-core-common-2.0.3\res
+com.aacl.flutter_ecommerce.app-jetified-datastore-core-release-33 C:\Users\ahmoh\.gradle\caches\8.10.2\transforms\f7cb9dc29dc6da30370ef89909a1f96c\transformed\jetified-datastore-core-release\res
+com.aacl.flutter_ecommerce.app-debug-34 G:\AACL-Ecommerce\android\app\src\debug\res
+com.aacl.flutter_ecommerce.app-main-35 G:\AACL-Ecommerce\android\app\src\main\res
+com.aacl.flutter_ecommerce.app-google-services-36 G:\AACL-Ecommerce\build\app\generated\res\google-services\debug
+com.aacl.flutter_ecommerce.app-pngs-37 G:\AACL-Ecommerce\build\app\generated\res\pngs\debug
+com.aacl.flutter_ecommerce.app-resValues-38 G:\AACL-Ecommerce\build\app\generated\res\resValues\debug
+com.aacl.flutter_ecommerce.app-packageDebugResources-39 G:\AACL-Ecommerce\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.aacl.flutter_ecommerce.app-packageDebugResources-40 G:\AACL-Ecommerce\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.aacl.flutter_ecommerce.app-debug-41 G:\AACL-Ecommerce\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.aacl.flutter_ecommerce.app-debug-42 G:\AACL-Ecommerce\build\cloud_firestore\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-debug-43 G:\AACL-Ecommerce\build\firebase_auth\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-debug-44 G:\AACL-Ecommerce\build\firebase_core\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-debug-45 G:\AACL-Ecommerce\build\firebase_messaging\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-debug-46 G:\AACL-Ecommerce\build\firebase_storage\intermediates\packaged_res\debug\packageDebugResources
+com.aacl.flutter_ecommerce.app-debug-47 G:\AACL-Ecommerce\build\flutter_keyboard_visibility\intermediates\packaged_res\debug\packageDebugResources

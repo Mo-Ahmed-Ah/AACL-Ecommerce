@@ -1,6 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/onboarding_screen.dart';
+import 'package:flutter_ecommerce/Screens/login_screen.dart';
+import 'package:flutter_ecommerce/Screens/navigation_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,45 +24,65 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    // Animation controllers
+    // إعداد الأنيميشن
     _iconController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 1200),
     );
     _textController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 1000),
+      duration: const Duration(milliseconds: 1000),
     );
 
-    // Fade animation
-    _fadeAnimation = Tween<double>(
-      begin: 0,
-      end: 1,
-    ).animate(CurvedAnimation(parent: _iconController, curve: Curves.easeIn));
+    _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _iconController, curve: Curves.easeIn),
+    );
 
-    // Slide animation
     _slideAnimation = Tween<Offset>(
-      begin: Offset(0, 0.5),
+      begin: const Offset(0, 0.5),
       end: Offset.zero,
-    ).animate(CurvedAnimation(parent: _textController, curve: Curves.easeOut));
+    ).animate(
+      CurvedAnimation(parent: _textController, curve: Curves.easeOut),
+    );
 
-    // Start animations
     _iconController.forward();
     _textController.forward();
 
-    // Navigate to onboarding after a delay
-    Timer(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
-          transitionDuration: Duration(milliseconds: 700),
-          pageBuilder:
-              (context, animation, secondaryAnimation) => OnboardingScreen(),
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadeTransition(opacity: animation, child: child);
-          },
-        ),
-      );
-    });
+    // تأخير بسيط قبل الانتقال
+    Timer(const Duration(seconds: 2), _navigateNext);
+  }
+
+  /// ✅ تحديد الصفحة التالية (حسب حالة المستخدم وظهور الـ Onboarding)
+  Future<void> _navigateNext() async {
+    final prefs = await SharedPreferences.getInstance();
+    final bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
+    final user = FirebaseAuth.instance.currentUser;
+
+    Widget nextPage;
+
+    if (!seenOnboarding) {
+      // أول مرة يفتح التطبيق → عرض Onboarding وتخزين أنه تم عرضها
+      await prefs.setBool('seenOnboarding', true);
+      nextPage = OnboardingScreen();
+    } else if (user != null) {
+      // المستخدم مسجل دخول
+      nextPage = const NavigationScreen();
+    } else {
+      // المستخدم غير مسجل دخول
+      nextPage = const LoginScreen();
+    }
+
+    if (!mounted) return;
+
+    Navigator.of(context).pushReplacement(
+      PageRouteBuilder(
+        transitionDuration: const Duration(milliseconds: 700),
+        pageBuilder: (context, animation, secondaryAnimation) => nextPage,
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          return FadeTransition(opacity: animation, child: child);
+        },
+      ),
+    );
   }
 
   @override
@@ -87,16 +111,16 @@ class _SplashScreenState extends State<SplashScreen>
           children: [
             FadeTransition(
               opacity: _fadeAnimation,
-              child: Icon(
+              child: const Icon(
                 Icons.shopping_cart,
                 size: 200,
                 color: Color.fromARGB(255, 238, 80, 80),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SlideTransition(
               position: _slideAnimation,
-              child: Text(
+              child: const Text(
                 "AACL SHOP",
                 style: TextStyle(
                   color: Colors.white,

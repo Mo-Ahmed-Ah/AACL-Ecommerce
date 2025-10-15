@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/product_screen.dart';
 
+// ignore: must_be_immutable
 class FavoritsScreen extends StatelessWidget {
   List imageList = [
     "assets/images/image1.jpg",

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Widgets/product_details_popup.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
+// ignore: must_be_immutable
 class ProductScreen extends StatelessWidget {
   List<String> imageList = [
     "assets/images/image1.jpg",

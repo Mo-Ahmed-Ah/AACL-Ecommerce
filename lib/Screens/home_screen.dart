@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/product_screen.dart';
 
+// ignore: must_be_immutable
 class HomeScreen extends StatelessWidget {
   List tabs = ["All", "Category", "Top", "Recommended"];
 

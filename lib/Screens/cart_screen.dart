@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/payment_method_screen.dart';
 import 'package:flutter_ecommerce/Widgets/container_button_modal.dart';
 
+// ignore: must_be_immutable
 class CartScreen extends StatelessWidget {
   List images = [
     "assets/images/image1.jpg",

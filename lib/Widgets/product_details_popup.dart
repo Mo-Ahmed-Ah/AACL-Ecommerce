@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/Screens/cart_screen.dart';
 import 'package:flutter_ecommerce/Widgets/container_button_modal.dart';
 
+// ignore: must_be_immutable
 class ProductDetailsPopup extends StatelessWidget {
   final istyle = TextStyle(
     color: Colors.black87,
